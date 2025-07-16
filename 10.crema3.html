@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUBRIDERM® Humectación Delicada</title>
+  <link rel="stylesheet" href="estilos/productos.css">
+  <link rel="stylesheet" href="estilos/logo.css">
+  <link rel="stylesheet" href="estilos/carrito.css">
+  <link rel="icon" type="image/png" href="imagenes/logo circulo.png">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" />
+
+<header class="panel">
+  
+  <label for="menu-toggle" class="menu-button">☰ Menú</label>
+</header>
+<button onclick="history.back()" class="buy-btn" style="margin: 20px;">Volver</button>
+
+<label for="menu-toggle" class="overlay"></label>
+
+<div class="side-menu">
+  <h2>Opciones</h2>
+  <a href="6.TodoM.html"><button>Servicios</button></a>
+  <a href="2.registro.html"><button>Reserva</button></a>
+  <a href="7.Productos.html"><button>Productos</button></a>
+  <a href="1. inicio.html"><button>Inicio</button></a>
+</div>
+  <div class="container">
+    <!-- Contenedor Superior -->
+    <div class="top-container">
+      <div class="product-image">
+  <!-- Radios -->
+  <input type="radio" name="carousel" id="img1" checked hidden>
+  <input type="radio" name="carousel" id="img2" hidden>
+  <input type="radio" name="carousel" id="img3" hidden>
+  <input type="radio" name="carousel" id="img4" hidden>
+  <input type="radio" name="carousel" id="img5" hidden>
+
+  <!-- Imágenes principales -->
+  <div class="carousel-images">
+    <div class="carousel-image"><img src="imagenes/Crema3.jpg" alt="Vista 1"></div>
+    <div class="carousel-image"><img src="imagenes/Crema3.1.JPG" alt="Vista 2"></div>
+    <div class="carousel-image"><img src="imagenes/Crema3.2.JPG" alt="Vista 3"></div>
+    <div class="carousel-image"><img src="imagenes/Crema3.3.JPG" alt="Vista 4"></div>
+    <div class="carousel-image"><img src="imagenes/Crema3.4.JPG" alt="Vista 5"></div>
+  </div>
+
+  <!-- Miniaturas -->
+  <div class="thumbnail-carousel">
+    <label for="img1"><img src="imagenes/Crema3.jpg" alt="Vista 1"></label>
+    <label for="img2"><img src="imagenes/Crema3.1.JPG" alt="Vista 2"></label>
+    <label for="img3"><img src="imagenes/Crema3.2.JPG" alt="Vista 3"></label>
+    <label for="img4"><img src="imagenes/Crema3.3.JPG" alt="Vista 4"></label>
+    <label for="img5"><img src="imagenes/Crema3.4.JPG" alt="Vista 5"></label>
+  </div>
+</div>
+
+      <div class="product-details">
+        <h1>LUBRIDERM® Humectación Delicada</h1>
+        <p class="por">Por: Lubriderm</p>
+        <p class="price">S/ 59.90 <span class="old-price">S/ 119</span> <span class="discount">-66%</span></p>
+        <button class="buy-btn" onclick="agregarAlCarrito('LUBRIDERM® Humectación Delicada', 'imagenes/Crema3.jpg')">Agregar al Carro</button>
+      </div>
+    </div>
+
+    <!-- Contenedor Inferior -->
+    <div class="bottom-container">
+      <div class="specs">
+        <h2>Descripción</h2>
+        <ul>
+        <p>LUBRIDERM® Humectación Delicada es una crema corporal con una fórmula ligera, libre de perfumes, colorantes, lanolina y parabenos que humecta la piel hasta por 48 horas.
+
+Ahora con Tecnología Pro-Ceramidas que ayuda a estimular y equilibrar las Ceramidas en la piel, manteniéndola humectada y protegida.
+
+Fórmula desarrollada para pieles sensibles preparada a base de agua purificada y con ingredientes delicados con la piel.
+
+Clínicamente y dermatológicamente probada. Fórmula hipoalergénica que ayuda a prevenir irritaciones y alergias. Piel visiblemente saludable que da a la piel el balance entre humectación, suavidad y frescura.</p>
+        </ul>
+        <h2 style="margin-top: 10px">Ingredientes</h2>
+        <ul>
+            <p>Aqua, Paraffinum Liquidum, Glycerin, Isopropyl Palmitate, Carbomer, Phenoxyethanol, Cetyl Alcohol, Potassium Cetyl Phosphate, Cocoglycerides, Caprylyl Glycol, Sodium Hydroxide, Avena Sativa Kernel Oil</p>
+        </ul>
+      </div>
+      <div class="additional-info">
+        <h2>Beneficios</h2>
+        <ul>
+          <li>Fórmula ligera 100% libre de colorantes, perfumes y lanolina.</li>
+          <li>Se absorbe rápidamente y no es grasosa.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Contenedor de Tabla Comparativa -->
+  <div class="comparison-table-container">
+    <h2>Comparación según Tono de Piel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tono de Piel</th>
+          <th>Sensibilidad</th>
+          <th>Irritabilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+           <td><button class="buy-btn" style="background-color: rgb(223, 201, 171);"></button></td>
+          <td>Baja</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+           <td><button class="buy-btn" style="background-color: rgb(179, 130, 84);"></button></td>
+          <td>Baja</td>
+          <td>Muy baja</td>
+        </tr>
+        <tr>
+          <td><button class="buy-btn" style="background-color: rgb(84, 48, 14);"></button></td>
+          <td>Baja</td>
+          <td>muy baja</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="comparison-table-container">
+    <h2>Comparación según Tipo de Piel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de Piel</th>
+          <th>Recomendado</th>
+          <th>Irritabilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Normal</td>
+          <td>NO</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+           <td>Grasa</td>
+          <td>SI</td>
+          <td>Muy baja</td>
+        </tr>
+        <tr>
+          <td>Mixta</td>
+          <td>SI</td>
+          <td>Muy baja</td>
+        </tr>
+        <tr>
+          <td>Seca</td>
+          <td>SI</td>
+          <td>Muy baja</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <!-- Contenedor de Carrito Flotante -->
+<div id="carrito-flotante">
+  <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito" class="icono-carrito">
+  <span id="contador-carrito">0</span>
+</div>
+
+<div id="modal-carrito" class="modal">
+  <div class="modal-contenido elegante">
+    <span class="cerrar" id="cerrar-modal-carrito">&times;</span>
+    <h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito" style="width:32px;vertical-align:middle;margin-right:8px;">
+      Carrito de compras
+    </h2>
+    <div id="contenido-carrito">
+      <p>Tu carrito está vacío.</p>
+    </div>
+    <button class="btn-finalizar">Finalizar compra</button>
+  </div>
+</div>
+<script src="java/carrito.js"></script>
+
+<div id="modal-gracias">
+  <div class="contenido">
+    <h2>¡Gracias por su compra!</h2>
+    <p>Estos son los productos que adquirió:</p>
+    <ul id="lista-compra"></ul>
+    <button id="cerrar-gracias">Cerrar</button>
+  </div>
+</div>
+
+<script src="java/carrito.js"></script>
+<script>
+  // Mostrar modal de agradecimiento con detalle de compra
+  document.querySelector('.btn-finalizar').addEventListener('click', function() {
+    // Obtener productos del carrito (ajusta según tu lógica)
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    let lista = document.getElementById('lista-compra');
+    lista.innerHTML = '';
+    if(carrito.length === 0) {
+      lista.innerHTML = '<li>No hay productos en el carrito.</li>';
+    } else {
+      carrito.forEach(item => {
+        lista.innerHTML += `<li><img src="${item.imagen}" alt="${item.nombre}">${item.nombre}</li>`;
+      });
+    }
+    document.getElementById('modal-gracias').style.display = 'flex';
+  });
+
+  // Cerrar modal de agradecimiento
+  document.getElementById('cerrar-gracias').onclick = function() {
+    document.getElementById('modal-gracias').style.display = 'none';
+    // Opcional: limpiar carrito después de la compra
+    localStorage.removeItem('carrito');
+    location.reload(); // recarga la página para actualizar el carrito
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUBRIDERM® Reparación Intensiva</title>
+  <link rel="stylesheet" href="estilos/productos.css">
+  <link rel="stylesheet" href="estilos/logo.css">
+  <link rel="stylesheet" href="estilos/carrito.css">
+  <link rel="icon" type="image/png" href="imagenes/logo circulo.png">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" />
+
+  <header class="panel">
+    <label for="menu-toggle" class="menu-button">☰ Menú</label>
+  </header>
+  <button onclick="history.back()" class="buy-btn" style="margin: 20px;">Volver</button>
+
+  <label for="menu-toggle" class="overlay"></label>
+
+  <div class="side-menu">
+    <h2>Opciones</h2>
+    <a href="6.TodoM.html"><button>Servicios</button></a>
+    <a href="2.registro.html"><button>Reserva</button></a>
+    <a href="7.Productos.html"><button>Productos</button></a>
+    <a href="1. inicio.html"><button>Inicio</button></a>
+  </div>
+  <div class="container">
+    <!-- Contenedor Superior -->
+    <div class="top-container">
+      <div class="product-image">
+        <!-- Radios -->
+        <input type="radio" name="carousel" id="img1" checked hidden>
+
+        <!-- Imágenes principales -->
+        <div class="carousel-images">
+          <div class="carousel-image"><img src="imagenes/Crema1.jpg" alt="Vista 1"></div>
+        </div>
+
+        <!-- Miniaturas -->
+        <div class="thumbnail-carousel">
+          <label for="img1"><img src="imagenes/crema1.jpg" alt="Vista 1"></label>
+        </div>
+      </div>
+      <div class="product-details">
+        <h1>LUBRIDERM® Reparación Intensiva</h1>
+        <p class="por">Por: Lubriderm</p>
+        <p class="price">S/ 39.90 <span class="old-price">S/ 119</span> <span class="discount">-66%</span></p>
+        <button onclick="agregarAlCarrito('Lubriderm lociones Reparación Intensiva', 'imagenes/Crema1.jpg')" class="buy-btn">Agregar al Carro</button>
+      </div>
+    </div>
+
+    <!-- Contenedor Inferior -->
+    <div class="bottom-container">
+      <div class="specs">
+        <h2>Descripción</h2>
+        <ul>
+          <p>Con la Crema Corporal LUBRIDERM® Reparación Intensiva, ayudas a tu piel severamente deshidratada, áspera y seca a retener la humedad.
+          Su tecnología de liberación controlada, extra-enriquecida con emolientes encapsulados a base de manteca de karité, humecta continuamente tu piel e incrementa su capacidad natural para conservar su humedad, logrando resultados increíbles en tan solo una semana.</p>
+        </ul>
+        <h2 style="margin-top: 10px">Ingredientes</h2>
+        <ul>
+          <p>Aqua, Glycerin, Paraffinum Liquidum, Isopropyl Palmitate, Petrolatum, Dimethicone, Stearyl Alcohol, Glyceryl Stearate, PEG-100 Stearate, Stearic Acid, Phenoxyethanol, Ammonium Acryloyldimethyltaurate/VP Copolymer, Butyrospermum Parkii Butter, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Parfum (alpha-Isomethyl Ionone, Benzyl Benzoate, Benzyl Salicylate, Citronellol, Hydroxycitronellal, d-Limonene, Linalool), Sodium Hydroxide, Disodium EDTA, Magnesium Aspartate, Zinc Gluconate, CopperGluconate, Glycine Soja Sterols.</p>
+        </ul>
+      </div>
+      <div class="additional-info">
+        <h2>Beneficios</h2>
+        <ul>
+          <li>Con fórmula de liberación continua de Shea Butter (manteca de karité) durante más de 24 horas.</li>
+          <li>El resultado es una piel que se ve y se siente más suave durante todo el día.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Contenedor de Tabla Comparativa -->
+  <div class="comparison-table-container">
+    <h2>Comparación según Tono de Piel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tono de Piel</th>
+          <th>Sensibilidad</th>
+          <th>Irritabilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button class="buy-btn" style="background-color: rgb(223, 201, 171);"></button></td>
+          <td>Baja</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+          <td><button class="buy-btn" style="background-color: rgb(179, 130, 84);"></button></td>
+          <td>Baja</td>
+          <td>Muy baja</td>
+        </tr>
+        <tr>
+          <td><button class="buy-btn" style="background-color: rgb(84, 48, 14);"></button></td>
+          <td>Baja</td>
+          <td>muy baja</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="comparison-table-container">
+    <h2>Comparación según Tipo de Piel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de Piel</th>
+          <th>Recomendado</th>
+          <th>Irritabilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Normal</td>
+          <td>NO</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+          <td>Grasa</td>
+          <td>SI</td>
+          <td>Muy baja</td>
+        </tr>
+        <tr>
+          <td>Mixta</td>
+          <td>SI</td>
+          <td>Muy baja</td>
+        </tr>
+        <tr>
+          <td>Seca</td>
+          <td>SI</td>
+          <td>Muy baja</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <img src="imagenes/Crema1.jpg" alt="Masaje 1">
+    <h2>Lubriderm lociones Reparación Intensiva</h2>
+    <div class="duration">Por: Lubriderm</div>
+    <button onclick="agregarAlCarrito('Lubriderm lociones Reparación Intensiva')" class="buy-btn">Agregar al Carro</button>
+    <button><a href="8.crema1.html">LEER MÁS</a></button>
+  </div>
+  <div id="carrito-flotante">
+    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito" class="icono-carrito">
+    <span id="contador-carrito">0</span>
+  </div>
+
+  <div id="modal-carrito" class="modal">
+    <div class="modal-contenido elegante">
+      <span class="cerrar" id="cerrar-modal-carrito">&times;</span>
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito" style="width:32px;vertical-align:middle;margin-right:8px;">Carrito de compras</h2>
+      <div id="contenido-carrito">
+        <p>Tu carrito está vacío.</p>
+      </div>
+      <button class="btn-finalizar">Finalizar compra</button>
+    </div>
+  </div>
+
+<div id="modal-gracias">
+  <div class="contenido">
+    <h2>¡Gracias por su compra!</h2>
+    <p>Estos son los productos que adquirió:</p>
+    <ul id="lista-compra"></ul>
+    <button id="cerrar-gracias">Cerrar</button>
+  </div>
+</div>
+
+<script src="java/carrito.js"></script>
+<script>
+  // Mostrar modal de agradecimiento con detalle de compra
+  document.querySelector('.btn-finalizar').addEventListener('click', function() {
+    // Obtener productos del carrito (ajusta según tu lógica)
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    let lista = document.getElementById('lista-compra');
+    lista.innerHTML = '';
+    if(carrito.length === 0) {
+      lista.innerHTML = '<li>No hay productos en el carrito.</li>';
+    } else {
+      carrito.forEach(item => {
+        lista.innerHTML += `<li><img src="${item.imagen}" alt="${item.nombre}">${item.nombre}</li>`;
+      });
+    }
+    document.getElementById('modal-gracias').style.display = 'flex';
+  });
+
+  // Cerrar modal de agradecimiento
+  document.getElementById('cerrar-gracias').onclick = function() {
+    document.getElementById('modal-gracias').style.display = 'none';
+    // Opcional: limpiar carrito después de la compra
+    localStorage.removeItem('carrito');
+    location.reload(); // recarga la página para actualizar el carrito
+  }
+</script>
+</body>
+</html>
+

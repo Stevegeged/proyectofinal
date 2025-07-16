@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúme - Reservar</title>
+    <link rel="stylesheet" href="estilos/reserva.css">
+    <link rel="stylesheet" href="estilos/productos.css">
+    <link rel="icon" type="image/png" href="imagenes/logo circulo.png">
+   
+</head>
+<body style="background-color: white"> \
+    <fieldset class="main-fieldset">
+        <marquee style="background-color:gray; color: white;">Desde todo el mes de Abril y Mayo descuentos por el mes de Mamá 🌷🌷🌷</marquee>
+        
+        <a class="volv" href="index.html"><button onclick="history.back()" class="buy-btn" style="background-color: rgb(119, 119, 119);">Volver</button></a>
+        
+        <img src="imagenes/Designer.png" class="logo">
+        
+        <div> 
+            <fieldset class="bordes">
+                <h1 class="text">Reserva</h1>
+                <hr class="divider"> <form>
+                    <p class="text">Nombres: <br />
+                        <input type="text" name="nombre" placeholder="Ingrese su Nombre">
+                    </p>
+                    <p class="text">Apellidos: <br />
+                        <input type="text" name="apellidos" placeholder="Ingrese sus apellidos">
+                    </p>
+                    <p class="text">DNI: <br />
+                        <input type="text" name="DNI" placeholder="Ingrese su DNI">
+                    </p>
+                    <p class="text">Género: <br /> <br />
+                        <select id="genero" name="genero" class="select-estilizado">
+                            <option value="hombre">Hombre</option>  
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">Otro</option>
+                        </select>       
+                    </p>
+                    <p class="text"> 
+                        Fecha de Reserva: <br />
+                        <input type="date" name="fechreserv" >
+                    </p>
+                    <p class="text">Tipo de Masaje: <br /><br />
+                        <select id="masaje" name="masajes" class="select-estilizado">
+                            <option value="M.Terapeutico">Masaje Terapéutico</option>
+                            <option value="M.Relajante">Masaje Relajante</option>
+                            <option value="M.Integral">Masaje Integral</option>
+                        </select>
+                    </p>
+                    <p class="text">Correo: <br />
+                        <input type="email" name="correo" placeholder="Ingrese su Gmail">
+                    </p>
+                    <p class="text">Teléfono:<br />
+                        <input type="number" name="numero" placeholder="Número de celular">
+                    </p> 
+                    
+                    <p class="botones-container">
+                        <input type="reset" value="Borrar" class="botones">
+                        <input type="submit" value="Enviar" class="botones">
+                    </p>  
+                    
+                    <hr class="divider"> </form>     
+            </fieldset>
+        </div>
+    </fieldset>
+    <div id="modal-exito" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" id="cerrar-modal">&times;</span>
+    <h2>Reserva exitosa</h2>
+    <p>¡Tu reserva fue registrada correctamente!</p>
+  </div>
+</div>
+    <script src="java/registro.js"></script>
+</body>
+</html>

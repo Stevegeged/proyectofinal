@@ -1,0 +1,134 @@
+.fond {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 0%;
+    padding: 20px;
+    overflow-x: hidden; 
+}
+
+.fond img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.fond p {
+    margin-bottom: 15px;
+}
+
+.fond p[style*="font-size: 30px"] {
+    font-size: 30px;
+}
+
+
+.input-container {
+   
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+input[type="text"],
+.form-input { 
+    
+    background: white; 
+    flex-grow: 1; 
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #333;
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    flex-basis: 100%;  
+    min-width: 180px; 
+}
+
+
+
+.boton {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; 
+    min-width: 180px; 
+    flex-basis: 100%; 
+}
+
+.boton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+@media (max-width: 992px) {
+    .fond img {
+        width: 40%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .fond img {
+        width: 50%;
+    }
+
+    .fond p[style*="font-size: 30px"] {
+        font-size: 24px;
+    }
+
+    .fond p:not(.input-container) { /* Target other paragraphs, not the input container for this rule */
+        font-size: 14px;
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack flex items (inputs and button) vertically */
+        align-items: center; /* Center stacked items */
+    }
+
+    .form-input {
+        width: 80%; 
+        max-width: 350px; 
+        margin-left: 0; 
+        margin-right: 0;
+    }
+
+    .boton {
+        width: 80%;
+        max-width: 350px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .fond {
+        padding: 15px;
+    }
+
+    .fond img {
+        width: 70%;
+    }
+
+    .fond p[style*="font-size: 30px"] {
+        font-size: 20px;
+    }
+
+     .fond p:not(.input-container) {
+        font-size: 13px;
+    }
+
+    .form-input, .boton {
+        width: 90%; /* Even wider for very small screens */
+        max-width: 300px;
+    }
+}

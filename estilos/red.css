@@ -1,0 +1,62 @@
+.content{
+ display: inline-flex;
+ justify-content: center; 
+ align-items: center;
+}
+.tit{
+    text-align: center;
+    color: black;
+    
+}
+.tit2{
+    text-align: center;
+}
+
+.insta{
+    display: block;
+    width: 7vh;
+    min-width: 7vh;
+    align-items: left;
+    margin-left: 8%;
+    cursor: pointer;
+    transition-duration: 300ms;
+    
+}
+.insta:hover{
+    transform: scale(1.5);
+    
+}
+.redinsta{
+    max-width: 100%;
+    text-align: left;
+    margin-left: 23%;
+    margin-top: -3%;
+}
+
+.secu{
+    display: inline-block;
+    padding: 5px;  
+    border-radius: 10px;  
+    transform: scale(1);
+    transition-duration: 300ms;
+    object-fit: cover;
+    
+}
+.secu:hover{
+    transform: scale(1.04);
+}
+.instagram{
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    margin: auto;
+    transition-duration: 300ms;
+    
+}
+.instagram:hover{
+    transform: scale(1.4);
+    
+}
+
+
+

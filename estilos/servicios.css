@@ -1,0 +1,63 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    margin-left: 260px;
+    font-size: 20px;
+    position: absolute;
+    top: 130px;
+    cursor: pointer;
+    
+     
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 40px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff6e8;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ffe6cc;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
